@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Moon Moon Games</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    </style>
+  </head>
+<body>
+  <div id="container">
+    <div id="logo">
+      <h3>Moon Moon</h3>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Games</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="top-section">
+    <h1>Moon Moon</h1>
+    <h2>games</h2>
+  </div>
+</div>
+<div id="yellow-section">
+  <img src="{{ url_for('static', filename='pic1.png') }}" alt="Image 1">
+  <img src="{{ url_for('static', filename='pic2.png') }}" alt="Image 2">
+  <img src="{{ url_for('static', filename='pic3.png') }}" alt="Image 3">
+</div>
+<div id="white-section">
+    <p>Immerse yourself</p>
+  </div>
+</body>
+</html>
