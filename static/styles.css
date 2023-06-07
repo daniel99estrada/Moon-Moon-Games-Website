@@ -56,10 +56,20 @@ a {
 
 #yellow-section {
   background-color: #FFD95A;
-  height: 1000px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#yellow-section h1 {
+  font-family: 'Roboto', sans-serif;
+  color: #12110f;
+}
+
+#yellow-section img {
+  max-width: 15%;
+  height: auto;
+  padding: 10px;
 }
 
 h1 {
@@ -96,49 +106,57 @@ h2 {
   margin: 0;
 }
 
-.form-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  justify-content: center;
-}
+  #contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+  }
 
-.form-container h2 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-}
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+  }
 
-.form-group {
-  margin-bottom: 20px;
-}
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 500px;
+  }
 
-label {
-  display: block;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  margin-bottom: 5px;
-}
+  .toggle-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 10px;
-}
+  .btn-submit {
+    width: 150px;
+    background-color: #12110f;
+    color: #fffcf0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+  }
 
-.toggle-label {
-  display: flex;
-  align-items: center;
-}
-
-.btn-submit {
-  background-color: #12110f;
-  color: #fffcf0;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-}
+  input[type="email"],
+  input[type=text]
+  ,select, textarea {
+    width: 70%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical 
+  }
