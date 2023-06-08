@@ -14,10 +14,9 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="#">Games</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Games</a></li>
-        <li><a href="#">Games</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -27,17 +26,21 @@
   </div>
 </div>
 <div id="yellow-section">
-  <h1>Immerse yourself</h1>
-  <img src="{{ url_for('static', filename='pic1.png') }}" alt="Image 1">
-  <img src="{{ url_for('static', filename='pic2.png') }}" alt="Image 2">
-  <img src="{{ url_for('static', filename='pic3.png') }}" alt="Image 3">
+  <div class="image-container">
+    <img src="{{ url_for('static', filename='pic1.png') }}" alt="Image 1">
+    <img src="{{ url_for('static', filename='pic2.png') }}" alt="Image 2">
+    <img src="{{ url_for('static', filename='pic3.png') }}" alt="Image 3">
+  </div>
+  <div>
+    <h1>Immerse yourself</h1>
+  </div>
 </div>
+
 <div id="white-section">
-    <p>Immerse yourself</p>
   </div>
   <div id="contact-section">
+    <h2>Contact</h2>
     <form>
-      <p>Contact</p>
       <div class="form-group">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -60,6 +63,18 @@
         <input type="submit" value="Send Message" class="btn-submit">
       </div>
     </form>
+  </div>
+  <div id="bottom-section">
+    <div id="logo">
+      <h3>Moon Moon 2023</h3>
+    </div>
+    <nav>
+        <ul>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
   </div>
 </body>
 </html>
