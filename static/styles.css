@@ -58,7 +58,7 @@ a {
   background-color: #FFD95A;
   height: 500px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
 }
@@ -67,7 +67,7 @@ a {
   font-family: 'Roboto', sans-serif;
   color: #12110f;
   font-weight: 20;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 #yellow-section img {
@@ -101,30 +101,16 @@ h2 {
   text-align: center;
 }
 
-#white-section {
-  background-color: #fffcf0;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#white-section p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  font-size: 44px;
-  text-align: center;
-  margin: 0;
-}
-
   #contact-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     font-family: 'Roboto', sans-serif;
+    margin: 60px;
   }
-  #contact-section.h2 {
+
+  #contact-section h2 {
     font-family: 'Roboto', sans-serif;
     color: #12110f;
     font-weight: 20;
@@ -136,7 +122,8 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 500px;
+    /* width: 500px; */
+    margin-bottom: 30px;
   }
 
   .form-group {
@@ -181,9 +168,10 @@ h2 {
 #bottom-section{
   background-color:  #12110f;
   height: 200px;
+  flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+    align-items: start;
+    padding: 20px;
   }
   
   #bottom-section.h1 {
@@ -208,6 +196,6 @@ h2 {
   }
   
   nav ul li a:hover {
-    color: #f00;
+    color: #FFD95A;
   }
   

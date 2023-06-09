@@ -24,24 +24,20 @@
     <h1>Moon Moon</h1>
     <h2>games</h2>
   </div>
-</div>
-<div id="yellow-section">
-  <div class="image-container">
-    <img src="{{ url_for('static', filename='pic1.png') }}" alt="Image 1">
-    <img src="{{ url_for('static', filename='pic2.png') }}" alt="Image 2">
-    <img src="{{ url_for('static', filename='pic3.png') }}" alt="Image 3">
-  </div>
-  <div>
-    <h1>Immerse yourself</h1>
-  </div>
-</div>
-
-<div id="white-section">
+  <div id="yellow-section">
+    <div>
+      <h1>Immerse yourself</h1>
+    </div>
+    <div class="image-container">
+      <img src="{{ url_for('static', filename='pic1.png') }}" alt="Image 1">
+      <img src="{{ url_for('static', filename='pic2.png') }}" alt="Image 2">
+      <img src="{{ url_for('static', filename='pic3.png') }}" alt="Image 3">
+    </div>
   </div>
   <div id="contact-section">
     <h2>Contact</h2>
     <form>
-      <div class="form-group">
+      <div class="form">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
       </div>
@@ -66,14 +62,15 @@
   </div>
   <div id="bottom-section">
     <div id="logo">
-      <h3>Moon Moon 2023</h3>
+      <h3>Moon Moon</h3>
+      <h4>2023</h4>
     </div>
     <nav>
-        <ul>
-          <li><a href="#">Games</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
   </div>
 </body>
