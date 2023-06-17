@@ -1,104 +1,106 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Moon Moon Games</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-    </style>
-  </head>
-  <body>
-    <!-- Header Section -->
-    <div id="container">
-      <div id="logo">
-        <h3>Moon Moon</h3>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#">Games</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+<head>
+  <title>Moon Moon Games</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <div id="container">
+    <div id="logo">
+      <h3>Moon Moon</h3>
     </div>
-    
-    <!-- Top Section -->
-    <div id="top-section">
-      <h1>Moon Moon</h1>
-      <h2>games</h2>
+    <nav>
+      <ul>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Top Section -->
+  <div id="top-section">
+    <h1>Moon Moon</h1>
+    <h2>games</h2>
+  </div>
+
+  <!-- Image Section -->
+  <div id="image-section">
+    <div>
+      <h1>Immerse yourself</h1>
     </div>
-    
-    <!-- Image Section -->
-    <div id="image-section">
-      <div>
-        <h1>Immerse yourself</h1>
-      </div>
-      <div class="image-container">
-        <img src="{{ url_for('static', filename='pic1.png') }}" alt="Image 1">
-        <img src="{{ url_for('static', filename='pic2.png') }}" alt="Image 2">
-        <img src="{{ url_for('static', filename='pic3.png') }}" alt="Image 3">
-      </div>
+    <div class="image-container">
+      <img src="{{ url_for('static', filename='pic1.png') }}" alt="Image 1">
+      <img src="{{ url_for('static', filename='pic2.png') }}" alt="Image 2">
+      <img src="{{ url_for('static', filename='pic3.png') }}" alt="Image 3">
     </div>
-    
-    <!-- Contact Section -->
-    <div id="contact-section">
-      <div id="about-section">
-        <!-- About Us -->
-        <div class="about-title">About Us</div>
-        <div class="about-content">
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact-section">
+    <div id="about-section">
+      <!-- About Us -->
+      <div class="about-title">About Us</div>
+      <div class="about-content">
+        <div class="row">
+          <!-- About Content -->
           <div class="row">
-            <!-- About Content -->
-            <div class="row">
-              <p>In 2023, Salvadoran developer Daniel Estrada founded Moon Moon Games, an indie game studio focused on creating stylized mobile games and VR experiences with exceptional music and sound effects. Daniel's passion for game design, coupled with his strong programming and musical background, drives us to create games that are engaging and stimulating. We are excited to share our passion for games with you.</p>
-              <img src="{{ url_for('static', filename='Unity.png') }}" alt="Game Studio Logo">
-            </div>
+            <p>In 2023, Salvadoran developer Daniel Estrada founded Moon Moon Games, an indie game studio focused on creating stylized mobile games and VR experiences with exceptional music and sound effects. Daniel's passion for game design, coupled with his strong programming and musical background, drives us to create games that are engaging and stimulating. We are excited to share our passion for games with you.</p>
+            <img src="{{ url_for('static', filename='Unity.png') }}" alt="Game Studio Logo">
           </div>
         </div>
-        
-        <!-- Contact Form -->
-        <h2>Contact</h2>
-        <form>
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <div class="form-group">
-            <label class="toggle-label">
-              <input type="checkbox" id="newsletter" name="newsletter">
-              <span>Subscribe to newsletter</span>
-            </label>
-          </div>
-          <div class="form-group">
-            <input type="submit" value="Send Message" class="btn-submit">
-          </div>
-        </form>
       </div>
-      
-      <!-- Footer Section -->
-      <div id="footer-container">
-        <div id="footer">
-          <div id="footer-left-container">
-            <h1>Moon Moon</h1>
-            <p>2023</p>
-            <div id="footer-button-container">
-              <button>Button</button>
-              <button>Button</button>
-            </div>
+
+ <!-- Contact Form -->
+<h2>Contact</h2>
+<form method="POST" action="/">
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div class="form-group">
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+  </div>
+  <div class="form-group">
+    <label class="toggle-label">
+      <input type="checkbox" id="newsletter" name="newsletter">
+      <span>Subscribe to newsletter</span>
+    </label>
+  </div>
+  <div class="form-group">
+    <input type="submit" value="Send Message" class="btn-submit">
+  </div>
+</form>
+
+    <!-- Footer Section -->
+    <div id="footer-container">
+      <div id="footer">
+        <div id="footer-left-container">
+          <h1>Moon Moon</h1>
+          <p>2023</p>
+          <div id="footer-button-container">
+            <button>Button</button>
+            <button>Button</button>
+          </div>
         </div>
         <div class="footer-right-container">
           <h3>Label</h3>
           <h3>Label</h3>
           <h3>Label</h3>
-      </div>
+        </div>
       </div>
     </div>
-  </body>
+
+
+  </div>
+</body>
 </html>
