@@ -5,6 +5,7 @@ html, body {
 
 body {
   background-color: #fffcf0;
+  width: auto;
 }
 
 #container {
@@ -12,7 +13,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #12110f;
-  padding: 10px;
+  padding: 10px 30px;
 }
 
 #logo {
@@ -46,7 +47,7 @@ a {
 }
 
 #top-section {
-  background-color: #12110f;
+  background-color:  #fffcf0;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -54,19 +55,54 @@ a {
   align-items: center;
 }
 
+#top-section h1 {
+  color:  #12110f;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 120px;
+  margin: 0;
+  text-align: center;
+}
+
+#top-section h2 {
+  color: #12110f;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 34px;
+  margin: 0;
+  text-align: center;
+}
+
 #image-section {
+  
   background-color: #FFD95A;
-  height: 500px;
+  height: 400px;
+  width: auto;
+  margin: 20px 10%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: 2px solid black;
+  border-radius: 7px;
+
+  /* grid-column-gap: 8px;
+  grid-row-gap: 10;
+  
+
+    border-radius: 20px;
+    justify-content: space-between;
+    align-self: stretch;
+    align-items: flex-start;
+    margin-top: 20em;
+    padding: 20px 10%;
+    position: relative; */
 }
 
 #image-section h1 {
   font-family: 'Roboto', sans-serif;
   color: #12110f;
-  font-weight: 500;
+  font-weight: 700;
   flex-grow: 1;
   width: 100%;
   font-size: 30px;
@@ -76,6 +112,7 @@ a {
   max-width: 15%;
   height: auto;
   padding: 10px;
+  border-radius: 20px;
 }
 .image-container {
   display: flex;
@@ -85,31 +122,94 @@ a {
   flex-direction: row;
 }
 
-h1 {
-  color: #fffcf0;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  font-size: 120px;
-  margin: 0;
-  text-align: center;
+#game-section {
+  padding-right: 100px;
+  padding-left: 100px;
+  background-color: #12110f;
 }
 
-h2 {
-  color: #fffcf0;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  font-size: 34px;
-  margin: 0;
-  text-align: center;
+.game-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
 }
 
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 600px;
+  margin-right: 600px;  
+}
+
+.divider {
+  width: 450px;
+  height: 0.5px;
+  background-color:  #fffcf0;
+}
+
+.game-content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 10px;
+  /* margin-left: 300px;
+  margin-right: 300px;   */
+}
+.game h3
+{
+  font-family: 'Roboto', sans-serif;
+  color:  #fffcf0;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.game-section-container h2 {
+  font-family: 'Roboto', sans-serif;
+  color:  #fffcf0;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.game-content-container p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  margin-right: 20px;
+  color:  #fffcf0;
+}
+
+.game-content-container img {
+  width: 400px;
+  height: 200px;
+  border: 2px solid #fffcf0;
+  border-radius: 10px;
+  
+}
 
 
 #about-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  width: auto;
+}
+
+#about-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFD95A;
+  /* width: auto; */
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 20px;
+
 }
 
 .about-title {
@@ -117,6 +217,7 @@ h2 {
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 10px;
+
 }
 
 .about-content {
@@ -142,39 +243,69 @@ h2 {
   margin-right: 30px;
 }
 
+#contact-section {
 
-  #contact-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    font-family: 'Roboto', sans-serif;
-    margin: 100px;
-  }
 
-  #contact-section h2 {
+}
+
+#contact-section-container {
+  background-color: #FFD95A;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  margin: 40px 10%;
+}
+
+#contact-section-container h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #12110f;
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 30px;
+  margin-left: 5%;
+}
+
+#contact-col-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: auto;
+  margin: 30px, 30px;
+
+}
+
+#contact-col-container h2 {
     font-family: 'Roboto', sans-serif;
     color: #12110f;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 40px;
-    margin-bottom: 30px;
   }
 
   form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     /* width: 500px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
     margin-bottom: 30px;
+    margin-right: 10%;
+    margin-right: 3%;
   }
 
   .form-group {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:flex-start;
     justify-content: center;
     margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 700;
     width: 500px;
   }
 
@@ -198,10 +329,10 @@ h2 {
   input[type="email"],
   input[type=text]
   ,select, textarea {
-    width: 70%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
+    width: 100%; /* Full width */
+    padding: 10px; /* Some padding */ 
+    border: 2px solid #12110f;; /* Gray border */
+    border-radius: 6px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
@@ -211,7 +342,7 @@ h2 {
 #footer-container {
   background-color: #12110f;
   height: 200px;
-  width: 99vw; 
+  width: auto; 
   /* display: flex; */
   /* flex-direction: column; */
   justify-content: start;
@@ -219,7 +350,7 @@ h2 {
 }
 
 #footer {
-  background-color: black;
+  background-color: #12110f;
   display: flex;
   justify-content: space-between;
   margin: 20px;

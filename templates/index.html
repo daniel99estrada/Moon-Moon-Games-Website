@@ -40,23 +40,43 @@
     </div>
   </div>
 
-  <!-- Contact Section -->
-  <div id="contact-section">
-    <div id="about-section">
-      <!-- About Us -->
-      <div class="about-title">About Us</div>
-      <div class="about-content">
-        <div class="row">
-          <!-- About Content -->
-          <div class="row">
-            <p>In 2023, Salvadoran developer Daniel Estrada founded Moon Moon Games, an indie game studio focused on creating stylized mobile games and VR experiences with exceptional music and sound effects. Daniel's passion for game design, coupled with his strong programming and musical background, drives us to create games that are engaging and stimulating. We are excited to share our passion for games with you.</p>
-            <img src="{{ url_for('static', filename='Unity.png') }}" alt="Game Studio Logo">
-          </div>
+   <!-- Game Section -->
+  <div id="game-section">
+    <div class="game-section-container">
+      <h2>Games</h2>
+      <div class="game">
+        <h3>Asteroids Ahead</h3>
+        <div class="divider"></div>
+        <div class="game-content-container">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum ante vel justo congue ultrices. Duis ac efficitur nisl. Aliquam suscipit viverra ipsum, vitae eleifend ipsum dapibus in. Nam facilisis tellus id odio placerat tincidunt.</p>
+          <img src="{{ url_for('static', filename='AsteroidsAhead.png') }}" alt="Image 4">
         </div>
       </div>
+    </div>
+  </div>
+
+  <div id="about-section">
+    <div id="about-section-container">
+    <!-- About Us -->
+    <div class="about-title">About Us</div>
+    <div class="about-content">
+      <div class="row">
+        <!-- About Content -->
+        <div class="row">
+          <p>In 2023, Salvadoran developer Daniel Estrada founded Moon Moon Games, an indie game studio focused on creating stylized mobile games and VR experiences with exceptional music and sound effects. Daniel's passion for game design, coupled with his strong programming and musical background, drives us to create games that are engaging and stimulating. We are excited to share our passion for games with you.</p>
+          <img src="{{ url_for('static', filename='Unity.png') }}" alt="Game Studio Logo">
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 
  <!-- Contact Form -->
-<h2>Contact</h2>
+ <div id="contact-section">
+  <div id="contact-section-container">
+  <h2>Contact</h2>
+  <div id = "contact-col-container">
+    <h2>Get in Touch</h2>
 <form method="POST" action="/">
   <div class="form-group">
     <label for="name">Name:</label>
@@ -80,6 +100,9 @@
     <input type="submit" value="Send Message" class="btn-submit">
   </div>
 </form>
+</div>
+</div>
+</div>
 
     <!-- Footer Section -->
     <div id="footer-container">
@@ -88,8 +111,8 @@
           <h1>Moon Moon</h1>
           <p>2023</p>
           <div id="footer-button-container">
-            <button>Button</button>
-            <button>Button</button>
+            <button>Google Play Store</button>
+            <button>Apple App Store</button>
           </div>
         </div>
         <div class="footer-right-container">
